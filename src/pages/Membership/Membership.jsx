@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   CuponForm,
+  FAQContainer,
   FirstStep,
   FloatBehindImage,
   FormCard,
@@ -19,12 +20,14 @@ import {
   ProListContainer,
   PromoIntroContainer,
   PromoPlansContainer,
+  QListContainer,
   SecondStep,
   StarterContainer,
   StarterListContainer,
 } from "../../styles/Membership/Membership.style";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { FaChevronDown } from "react-icons/fa6";
 
 const Membership = () => {
   const [toggle, setToggle] = useState(0);
@@ -315,6 +318,47 @@ const Membership = () => {
           </FormCard>
         </PlansContainerThree>
       </PromoPlansContainer>
+      <FAQContainer>
+        <p className="faq__text">
+          To ensure you're well-Flipped to make the most out of your exclusive
+          experience, <br /> here are some of our
+        </p>
+        <h2 className="faq__header">FAQs</h2>
+        <QListContainer>
+          <div className="q__list__item">
+            <FaChevronDown />
+            <p className="q__list__text">
+              How can I activate my Free Membership coupon?
+            </p>
+          </div>
+          <div className="q__list__item">
+            <FaChevronDown />
+            <p className="q__list__text">
+              What is Early Access, and how does it work?
+            </p>
+          </div>
+          <div className="q__list__item">
+            <FaChevronDown />
+            <p className="q__list__text">
+              How much is the discount for Premium and Bitflip+ members on
+              services?
+            </p>
+          </div>
+          <div className="q__list__item">
+            <FaChevronDown />
+            <p className="q__list__text">
+              Are there additional perks for Bitflip+ members beyond the
+              discount?
+            </p>
+          </div>
+          <div className="q__list__item">
+            <FaChevronDown />
+            <p className="q__list__text">
+              How otten are new teatures introduced on BitFlip?
+            </p>
+          </div>
+        </QListContainer>
+      </FAQContainer>
     </MembershipContainer>
   );
 };

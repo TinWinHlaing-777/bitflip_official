@@ -1,31 +1,119 @@
 import {
-  ContactSession,
+  ContactInfoContainer,
+  CopyrightContainer,
+  ExploreInfoContainer,
   FooterContainer,
-  PolicySession,
-  SocialMediaSession,
+  FooterIcon,
+  FooterListContainer,
+  LegalInfoContainer,
 } from "../../styles/Footer/Footer.style";
-import { FaFacebookF, FaDiscord } from "react-icons/fa";
-import { BiLogoGmail } from "react-icons/bi";
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <ContactSession className="session">
-        <a href="#">BitFlip</a>
-        <a href="mailto:bitflipofficial@gmail.com">bitflipofficial@gmail.com</a>
-        <p>Yangon, Myanmar</p>
-      </ContactSession>
-      <PolicySession className="session">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Services</a>
-        <a href="#">Cookie Policy</a>
-        <a href="#">Copyright Information</a>
-      </PolicySession>
-      <SocialMediaSession className="session">
-        <FaFacebookF className="social__icon" />
-        <FaDiscord className="social__icon" />
-        <BiLogoGmail className="social__icon" />
-      </SocialMediaSession>
+      <FooterIcon src="/images/logo/LogoFull_White.svg" />
+      <FooterListContainer>
+        <ContactInfoContainer>
+          <h3 className="info__header">Contact Information</h3>
+          <ul className="info__list">
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Instagram
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Discord
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Facebook
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Email Address
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Call Us
+              </a>
+            </li>
+          </ul>
+        </ContactInfoContainer>
+        <ExploreInfoContainer>
+          <h3 className="info__header">Explore</h3>
+          <ul className="info__list">
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Service
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Early Access
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Memberships
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                FAQs
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </ExploreInfoContainer>
+        <LegalInfoContainer>
+          <h3 className="info__header">Legal Notice</h3>
+          <ul className="info__list">
+            <li className="info__list__item">
+              <a href="/contact-details" className="info__text">
+                Contact Details
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Terms of use
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Privacy Policy
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Newsletter Information
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                User Conduct
+              </a>
+            </li>
+            <li className="info__list__item">
+              <a href="#" className="info__text">
+                Trademarks
+              </a>
+            </li>
+          </ul>
+        </LegalInfoContainer>
+      </FooterListContainer>
+      <CopyrightContainer>
+        <p className="copyright__text">
+          Copyright &#169; 2023 BitFlip Official | All rights reserved
+        </p>
+      </CopyrightContainer>
     </FooterContainer>
   );
 };

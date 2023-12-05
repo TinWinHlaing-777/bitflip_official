@@ -24,7 +24,6 @@ import {
   ThridImageContainer,
   VerticalLineContainer,
 } from "../../styles/Home/Home.style";
-import Footer from "../../components/Footer/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
@@ -298,7 +297,6 @@ const Home = () => {
             </button>
           </form>
         </ContactContainer>
-        <Footer />
       </HomeContainer>
     </>
   );

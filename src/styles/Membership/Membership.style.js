@@ -527,6 +527,8 @@ const PlansContainerThree = styled.div`
   align-items: center;
   flex-direction: column;
   margin-top: 5%;
+  padding-bottom: 3%;
+
   &.active {
     display: flex;
   }
@@ -626,6 +628,50 @@ const FormCard = styled.div`
   }
 `;
 
+const FAQContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  .faq__text {
+    text-align: center;
+    font-family: "Work Sans";
+    font-weight: 200;
+    opacity: 0.8;
+  }
+  .faq__header {
+    font-family: "Work Sans";
+    font-weight: 400;
+    margin-top: 5%;
+    font-size: 32px;
+    text-align: center;
+    padding: 0.5em 2.5em;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #b2009c, #ff7e00) 1 1 1 1;
+    border-radius: 50%;
+  }
+`;
+
+const QListContainer = styled.div`
+  margin-top: 5%;
+  width: 50%;
+  margin-left: 5%;
+  .q__list__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    .q__list__text {
+      color: ${theme.color.alert};
+      font-family: "Work Sans";
+      font-weight: 200;
+      margin-left: 5%;
+      font-size: 18px;
+    }
+  }
+`;
+
 export {
   MembershipContainer,
   FloatBehindImage,
@@ -649,4 +695,6 @@ export {
   PlansContainerThree,
   CuponForm,
   FormCard,
+  FAQContainer,
+  QListContainer,
 };

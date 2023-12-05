@@ -467,8 +467,6 @@ const SecondImageContainer = styled.div`
   align-items: center;
   width: 100%;
   position: relative;
-  @media screen and (max-width: 480px) {
-  }
   .second__container__text {
     font-size: 14px;
     line-height: 30px;
@@ -484,8 +482,10 @@ const SecondImageContainer = styled.div`
   .second__image__container {
     display: flex;
     justify-content: space-between; /* Center the content horizontally */
-    /* flex-direction: column; */
-    /* margin: auto; */
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      margin: auto;
+    }
     .second__porfolio__image {
       width: 20em;
       height: 28em;
@@ -507,17 +507,38 @@ const ThridImageContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    margin-top: 15%;
+    justify-content: center;
+    flex-direction: column;
+  }
   .third__porfolio__image {
     position: relative;
     width: 20em;
     height: 28em;
     opacity: 0.8;
+    @media screen and (max-width: 480px) {
+      width: 18em;
+      height: 25em;
+      margin: auto;
+    }
+    @media screen and (max-width: 360px) {
+      width: 16em;
+      height: 25em;
+    }
   }
   .third__text__container {
     width: 50%;
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      margin-top: 10%;
+    }
     .third__container__text {
       font-size: 14px;
       line-height: 30px;
+      @media screen and (max-width: 480px) {
+        text-align: center;
+      }
     }
     .third__container__btn {
       border: none;
@@ -530,6 +551,13 @@ const ThridImageContainer = styled.div`
       margin-top: 3em;
       margin-left: -2px;
       cursor: pointer;
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+      &:hover {
+        transition: all 0.3s ease;
+        opacity: 0.8;
+      }
     }
   }
 `;
@@ -537,10 +565,17 @@ const ThridImageContainer = styled.div`
 const FinalPorfolioComponent = styled.div`
   margin-top: 15%;
   width: 45%;
+  @media screen and (max-width: 480px) {
+    width: 90%;
+    margin: 15% auto;
+  }
   .final__container__text {
     font-size: 14px;
     line-height: 30px;
     text-align: right;
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
   }
 `;
 
@@ -548,6 +583,9 @@ const PromoComponent = styled.div`
   width: 67%;
   margin-left: auto;
   margin-top: 3%;
+  @media screen and (max-width: 480px) {
+    width: 80%;
+  }
   .horizontal__close__line {
     background-color: ${theme.color.primary};
     width: 100%;
@@ -581,6 +619,11 @@ const NewFeaturesContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    background-position: 50% -20%;
+    background-size: 180%;
+  }
   .new__feature__btn {
     background: none;
     border: none;
@@ -588,17 +631,29 @@ const NewFeaturesContainer = styled.div`
     color: ${theme.color.primary};
     cursor: pointer;
     text-shadow: 2px 10px 100px ${theme.color.primary};
+    @media screen and (max-width: 480px) {
+      font-size: 32px;
+    }
     &.membership__btn {
       margin-top: 2em;
       margin-left: 3em;
+      @media screen and (max-width: 480px) {
+        margin: 0;
+      }
     }
     &.bitverse__btn {
       margin-bottom: 7em;
       margin-right: 5em;
+      @media screen and (max-width: 480px) {
+        margin: 0;
+      }
     }
     &.blog__btn {
       margin-right: 3em;
       margin-bottom: 3em;
+      @media screen and (max-width: 480px) {
+        margin: 0;
+      }
     }
   }
 `;
@@ -611,6 +666,9 @@ const ContactContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
   .contact__circle {
     position: absolute;
     left: -70em;
@@ -625,6 +683,11 @@ const ContactContainer = styled.div`
     font-size: 20px;
     margin-bottom: 200px;
     line-height: 40px;
+    @media screen and (max-width: 480px) {
+      margin-top: 20%;
+      margin-bottom: 0px;
+      text-align: center;
+    }
   }
   .contact__form {
     display: flex;
@@ -632,6 +695,9 @@ const ContactContainer = styled.div`
     align-items: center;
     flex-direction: column;
     margin-top: 5%;
+    @media screen and (max-width: 480px) {
+      margin-top: 2%;
+    }
     input {
       border: none;
       border-bottom: 1px solid ${theme.color.primary};
@@ -650,6 +716,9 @@ const ContactContainer = styled.div`
       margin-top: 20px;
       background: none;
       font-size: 18px;
+      @media screen and (max-width: 480px) {
+        height: 50px;
+      }
       cursor: pointer;
       &.white__btn {
         background-color: ${theme.color.primary};

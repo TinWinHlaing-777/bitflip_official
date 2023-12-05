@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Membership from "./pages/Membership/Membership";
+import Contact from "./pages/FooterSession/Contact";
 
 const router = createBrowserRouter([
   {
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
   {
     path: "/plus",
     Component: Membership,
+  },
+  {
+    path: "/contact-details",
+    Component: Contact,
   },
 ]);
 
