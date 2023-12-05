@@ -3,8 +3,10 @@ import ReactDOM from "react-dom";
 import App from "./App.jsx";
 import "remixicon/fonts/remixicon.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// eslint-disable-next-line react/no-deprecated
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
