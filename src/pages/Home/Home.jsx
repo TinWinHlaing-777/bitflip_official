@@ -178,14 +178,14 @@ const Home = () => {
                 src="/images/porfolio/Porfolio1.png"
                 alt="porfolio1"
                 className="first__porfolio__image"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-duration="500"
               />
               <img
                 src="/images/porfolio/Porfolio2.png"
                 alt="porfolio2"
                 className="first__porfolio__image"
-                data-aos="fade-left"
+                data-aos="fade-down"
                 data-aos-duration="500"
               />
               <p

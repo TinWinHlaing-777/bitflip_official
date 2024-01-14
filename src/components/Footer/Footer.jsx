@@ -82,12 +82,12 @@ const Footer = () => {
               </a>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <a href="terms-of-use" className="info__text">
                 Terms of use
               </a>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <a href="privacy-policy" className="info__text">
                 Privacy Policy
               </a>
             </li>
@@ -97,7 +97,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <a href="user-conduct" className="info__text">
                 User Conduct
               </a>
             </li>

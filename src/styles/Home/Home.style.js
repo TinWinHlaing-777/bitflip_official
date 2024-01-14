@@ -3,7 +3,7 @@ import theme from "../../theme";
 import bgImage from "/images/porfolio/Circle1.svg";
 
 const HomeContainer = styled.div`
-  width: 100%;
+  width: auto;
   height: auto;
 `;
 
@@ -676,6 +676,9 @@ const ContactContainer = styled.div`
     width: 110em;
     height: 130vh;
     opacity: 0.3;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   .contact__text {

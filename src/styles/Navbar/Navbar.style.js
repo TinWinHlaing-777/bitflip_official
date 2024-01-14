@@ -11,15 +11,20 @@ export const NavbarComponent = styled.nav`
   padding: 0 2em;
   position: fixed;
   z-index: 1000;
-  @media screen and (max-width: 768px) {
-    padding: 0 0.5em;
+  @media screen and (max-width: 480px) {
+    /* padding: 0 0.5em; */
     height: 10vh;
+    width: 100vw;
   }
 `;
 
 export const NavLogo = styled.img`
   width: 150px;
   height: 150px;
+  /* @media screen and (max-width: 480px) {
+    width: 100px;
+    height: 100px;
+  } */
 `;
 
 export const NavList = styled.ul`
@@ -68,6 +73,8 @@ export const IconContainer = styled.div`
   @media screen and (max-width: 768px) {
     .menu__icons {
       display: flex;
+      /* width: 20px;
+      height: 20px; */
     }
   }
 `;

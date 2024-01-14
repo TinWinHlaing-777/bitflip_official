@@ -33,7 +33,6 @@ const Membership = () => {
   const [toggle, setToggle] = useState(0);
 
   const toggleTab = (index) => {
-    console.log(index);
     setToggle(index);
   };
 
