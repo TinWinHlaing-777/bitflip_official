@@ -83,7 +83,13 @@ const Services = () => {
         </div>
         <ServicesLists props={toggle} />
       </ServiceBodyContainer>
-      <ServiceFooterContainer></ServiceFooterContainer>
+      <ServiceFooterContainer>
+        <p className="service__footer__text">
+          Or, forget the headage, tell us your story and let us do the <br />
+          work for you!
+        </p>
+        <button className="service__footer__btn">Contact Us</button>
+      </ServiceFooterContainer>
     </ServiceContainer>
   );
 };
