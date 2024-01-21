@@ -17,19 +17,31 @@ const Services = () => {
   return (
     <ServiceContainer>
       <ServiceHeaderContainer>
-        <div className="service__card">
+        <div
+          className="service__card"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
           <p className="service__card__header">You have your Goal,</p>
           <p className="service__card__body">
             Greate your idea might seems obsolate to others, but not to us.
           </p>
         </div>
-        <div className="service__card">
+        <div
+          className="service__card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
           <p className="service__card__header">What's Missing?</p>
           <p className="service__card__body">
             Who will make it work for you? Well now you think -
           </p>
         </div>
-        <div className="service__card">
+        <div
+          className="service__card"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           <p className="service__card__header">We make it happen!</p>
           <p className="service__card__body">
             Now together it's time to create the enterpreneur journey of your
@@ -85,8 +97,8 @@ const Services = () => {
       </ServiceBodyContainer>
       <ServiceFooterContainer>
         <p className="service__footer__text">
-          Or, forget the headage, tell us your story and let us do the <br />
-          work for you!
+          Or, forget the headage, tell us your story and let us do the work for
+          you!
         </p>
         <button className="service__footer__btn">Contact Us</button>
       </ServiceFooterContainer>

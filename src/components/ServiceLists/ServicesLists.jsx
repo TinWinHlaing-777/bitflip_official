@@ -1,7 +1,13 @@
+import { useState } from "react";
 import {
+  BrandCard,
   CustomServiceContainer,
   CustomizeForm,
+  DesignDetailsContainer,
+  DesignListContainer,
   DesignServiceContainer,
+  LogoCard,
+  MediaCard,
   MobileServiceContainer,
   PackageCard,
   QuoteContainer,
@@ -119,12 +125,292 @@ const mobilepackages = [
   },
 ];
 
+const LogoBrandingList = [
+  {
+    title: "Basic",
+    price: "50",
+    features: [
+      {
+        indexName: "Concept",
+        item: 2,
+      },
+      {
+        indexName: "Revision",
+        item: 4,
+      },
+      {
+        indexName: "Color Palette",
+        item: 2,
+      },
+      {
+        indexName: "File Format",
+        item: 3,
+      },
+      {
+        indexName: "File Resolution",
+        item: "Basic",
+      },
+      {
+        indexName: "Color Theory",
+        item: "Basic",
+      },
+      {
+        indexName: "Adaptability",
+        item: "Basic",
+      },
+      {
+        indexName: "Logo Portfolio",
+      },
+      {
+        indexName: "Source File",
+      },
+    ],
+  },
+  {
+    title: "Standard",
+    price: "140",
+    features: [
+      {
+        indexName: "Concept",
+        item: 5,
+      },
+      {
+        indexName: "Revision",
+        item: 8,
+      },
+      {
+        indexName: "Color Palette",
+        item: 4,
+      },
+      {
+        indexName: "File Format",
+        item: 4,
+      },
+      {
+        indexName: "Mockup",
+        item: 1,
+      },
+      {
+        indexName: "File Resolution",
+        item: "Standard",
+      },
+      {
+        indexName: "Color Theory",
+        item: "Standard",
+      },
+      {
+        indexName: "Adaptability",
+        item: "Standard",
+      },
+      {
+        indexName: "Branding Guidline",
+      },
+      {
+        indexName: "Logo Portfolio",
+      },
+      {
+        indexName: "Source File",
+      },
+    ],
+  },
+  {
+    title: "Premium",
+    price: "220",
+    features: [
+      {
+        indexName: "Concept",
+        item: 9,
+      },
+      {
+        indexName: "Revision",
+        item: "Unlimitted",
+      },
+      {
+        indexName: "Color Palette",
+        item: 8,
+      },
+      {
+        indexName: "File Format",
+        item: 6,
+      },
+      {
+        indexName: "Mockup",
+        item: 3,
+      },
+      {
+        indexName: "File Resolution",
+        item: "High",
+      },
+      {
+        indexName: "Color Theory",
+        item: "High",
+      },
+      {
+        indexName: "Adaptability",
+        item: "High",
+      },
+      {
+        indexName: "Branding Guidline",
+      },
+      {
+        indexName: "Logo Portfolio",
+      },
+      {
+        indexName: "Source File",
+      },
+    ],
+  },
+];
+
+const MediaList = [
+  {
+    title: "Basic",
+    price: "50",
+    features: [
+      {
+        indexName: "Concept",
+        item: 2,
+      },
+      {
+        indexName: "Revision",
+        item: 4,
+      },
+      {
+        indexName: "Template",
+        item: 2,
+      },
+      {
+        indexName: "File Format",
+        item: 2,
+      },
+      {
+        indexName: "File Resolution",
+        item: "Basic",
+      },
+      {
+        indexName: "Color Theory",
+        item: "Basic",
+      },
+      {
+        indexName: "Adaptability",
+        item: "Basic",
+      },
+      {
+        indexName: "Social Media Portfolio",
+      },
+      {
+        indexName: "Source File",
+      },
+    ],
+  },
+  {
+    title: "Standard",
+    price: "140",
+    features: [
+      {
+        indexName: "Concept",
+        item: 5,
+      },
+      {
+        indexName: "Revision",
+        item: 8,
+      },
+      {
+        indexName: "Template",
+        item: 4,
+      },
+      {
+        indexName: "File Format",
+        item: 4,
+      },
+      {
+        indexName: "Platform",
+        item: 1,
+      },
+      {
+        indexName: "File Resolution",
+        item: "Standard",
+      },
+      {
+        indexName: "Color Theory",
+        item: "Standard",
+      },
+      {
+        indexName: "Adaptability",
+        item: "Standard",
+      },
+      {
+        indexName: "Documentation",
+      },
+      {
+        indexName: "Social Media Portfolio",
+      },
+      {
+        indexName: "Source File",
+      },
+    ],
+  },
+  {
+    title: "Premium",
+    price: "220",
+    features: [
+      {
+        indexName: "Concept",
+        item: 9,
+      },
+      {
+        indexName: "Revision",
+        item: "Unlimitted",
+      },
+      {
+        indexName: "Color Palette",
+        item: 8,
+      },
+      {
+        indexName: "File Format",
+        item: 6,
+      },
+      {
+        indexName: "Platform",
+        item: 3,
+      },
+      {
+        indexName: "File Resolution",
+        item: "High",
+      },
+      {
+        indexName: "Color Theory",
+        item: "High",
+      },
+      {
+        indexName: "Adaptability",
+        item: "High",
+      },
+      {
+        indexName: "Documentation",
+      },
+      {
+        indexName: "Social Media Portfolio",
+      },
+      {
+        indexName: "Source File",
+      },
+    ],
+  },
+];
+
 const ServicesLists = ({ props }) => {
+  const [activeDesign, setActiveDesign] = useState(0);
+
+  const toggleDesign = (index) => {
+    setActiveDesign(index);
+  };
+
   return (
     <>
       <WebServiceContainer className={props === 0 ? "active" : null}>
         {webpackages.map((data, index) => (
-          <PackageCard key={index}>
+          <PackageCard key={index} data-aos="fade-up" data-aos-duration="700">
             <div className="package__card__header">
               <p className="card__title">{data.title}</p>
             </div>
@@ -149,7 +435,11 @@ const ServicesLists = ({ props }) => {
           </PackageCard>
         ))}
       </WebServiceContainer>
-      <MobileServiceContainer className={props === 1 ? "active" : null}>
+      <MobileServiceContainer
+        className={props === 1 ? "active" : null}
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >
         {mobilepackages.map((data, index) => (
           <PackageCard key={index}>
             <div className="package__card__header">
@@ -177,7 +467,142 @@ const ServicesLists = ({ props }) => {
         ))}
       </MobileServiceContainer>
       <DesignServiceContainer className={props === 2 ? "active" : null}>
-        design
+        <DesignListContainer>
+          <li
+            onClick={() => toggleDesign(0)}
+            className={
+              activeDesign === 0
+                ? "design__list__item active"
+                : "design__list__item"
+            }
+          >
+            Logo Branding
+          </li>
+          <li
+            onClick={() => toggleDesign(1)}
+            className={
+              activeDesign === 1
+                ? "design__list__item active"
+                : "design__list__item"
+            }
+          >
+            Social Medai Posts
+          </li>
+          <li
+            onClick={() => toggleDesign(2)}
+            className={
+              activeDesign === 2
+                ? "design__list__item active"
+                : "design__list__item"
+            }
+          >
+            Brand Printing
+          </li>
+        </DesignListContainer>
+        <DesignDetailsContainer>
+          <LogoCard
+            className={activeDesign === 0 ? "active" : null}
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            {LogoBrandingList.map((data, index) => (
+              <div className="design__package__card" key={index}>
+                <div className="design__package__header">
+                  <p className="design__package__title">{data.title}</p>
+                </div>
+                <div className="d_package__price__container">
+                  <p className="d_price__text">${data.price}</p>
+                </div>
+                <ul className="design__package__body">
+                  {data.features.map((data, key) => (
+                    <li className="design__package__list__item" key={key}>
+                      <span className="index__name__text">
+                        {data.indexName}
+                      </span>
+                      <span className="item__text">{data.item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="design__package__footer">
+                  <button className="d_purchase__btn">Purchase</button>
+                  <img
+                    src="/images/logo/LogoOnly_White.svg"
+                    alt="logo"
+                    className="d_purchase__card__logo"
+                  />
+                </div>
+              </div>
+            ))}
+          </LogoCard>
+          <MediaCard
+            className={activeDesign === 1 ? "active" : null}
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            {MediaList.map((data, index) => (
+              <div className="design__package__card" key={index}>
+                <div className="design__package__header">
+                  <p className="design__package__title">{data.title}</p>
+                </div>
+                <div className="d_package__price__container">
+                  <p className="d_price__text">${data.price}</p>
+                </div>
+                <ul className="design__package__body">
+                  {data.features.map((data, key) => (
+                    <li className="design__package__list__item" key={key}>
+                      <span className="index__name__text">
+                        {data.indexName}
+                      </span>
+                      <span className="item__text">{data.item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="design__package__footer">
+                  <button className="d_purchase__btn">Purchase</button>
+                  <img
+                    src="/images/logo/LogoOnly_White.svg"
+                    alt="logo"
+                    className="d_purchase__card__logo"
+                  />
+                </div>
+              </div>
+            ))}
+          </MediaCard>
+          <BrandCard
+            className={activeDesign === 2 ? "active" : null}
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            {MediaList.map((data, index) => (
+              <div className="design__package__card" key={index}>
+                <div className="design__package__header">
+                  <p className="design__package__title">{data.title}</p>
+                </div>
+                <div className="d_package__price__container">
+                  <p className="d_price__text">${data.price}</p>
+                </div>
+                <ul className="design__package__body">
+                  {data.features.map((data, key) => (
+                    <li className="design__package__list__item" key={key}>
+                      <span className="index__name__text">
+                        {data.indexName}
+                      </span>
+                      <span className="item__text">{data.item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="design__package__footer">
+                  <button className="d_purchase__btn">Purchase</button>
+                  <img
+                    src="/images/logo/LogoOnly_White.svg"
+                    alt="logo"
+                    className="d_purchase__card__logo"
+                  />
+                </div>
+              </div>
+            ))}
+          </BrandCard>
+        </DesignDetailsContainer>
       </DesignServiceContainer>
       <CustomServiceContainer className={props === 3 ? "active" : null}>
         <QuoteContainer>

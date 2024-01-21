@@ -110,7 +110,7 @@ const TextContainer = styled.div`
     height: 70px;
     box-shadow: 5px 5px 10px ${theme.color.standard};
     font-size: 20px;
-    margin-top: 5.5em;
+    margin-top: 12%;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -192,13 +192,13 @@ const AboutContainer = styled(ServiceContainer)`
   background: rgba(40, 40, 40, 0.9);
   box-shadow: 2px 2px 10px ${theme.color.standard};
   padding: 70px 30px;
-  margin-top: -25%;
+  margin-top: -45vh;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: -100%;
+    margin-top: -70vh;
     padding: 30px 10px;
   }
 

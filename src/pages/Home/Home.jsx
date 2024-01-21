@@ -47,7 +47,7 @@ const Home = () => {
                 forward-looking <br />
                 to the future of your business
               </p>
-              <Link to="/plus" className="intro__btn">
+              <Link to="/services" className="intro__btn">
                 Join Now
                 <i className="ri-arrow-right-s-line btn__icon"></i>
               </Link>

@@ -20,7 +20,7 @@ export const FooterListContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   padding-bottom: 100px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px), screen and (max-width: 480px) {
     flex-direction: column;
   }
 `;
@@ -28,7 +28,7 @@ export const FooterListContainer = styled.div`
 export const ContactInfoContainer = styled.div`
   width: 30%;
   margin-right: 5%;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px), screen and (max-width: 480px) {
     width: 100%;
     margin-bottom: 2em;
   }
@@ -60,7 +60,7 @@ export const ExploreInfoContainer = styled(ContactInfoContainer)``;
 
 export const LegalInfoContainer = styled(ContactInfoContainer)`
   width: 40%;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px), screen and (max-width: 480px) {
     width: 100%;
     margin-bottom: 0;
   }
@@ -68,7 +68,7 @@ export const LegalInfoContainer = styled(ContactInfoContainer)`
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px), screen and (max-width: 480px) {
       grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
     }
   }
