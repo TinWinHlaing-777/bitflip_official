@@ -6,7 +6,6 @@ import {
   NavbarComponent,
 } from "../../styles/Navbar/Navbar.style";
 import { AiOutlineBars, AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -22,29 +21,29 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav__list__item">
-          <Link to="/about" className="nav__list__item__text">
+          <a href="/about" className="nav__list__item__text">
             About
-          </Link>
+          </a>
         </li>
         <li className="nav__list__item">
-          <Link to="/services" className="nav__list__item__text">
+          <a href="/services" className="nav__list__item__text">
             Services
-          </Link>
+          </a>
         </li>
         <li className="nav__list__item">
-          <Link to="/bolgs" className="nav__list__item__text">
+          <a href="/bolgs" className="nav__list__item__text">
             Blogs
-          </Link>
+          </a>
         </li>
         <li className="nav__list__item">
-          <Link to="/contact" className="nav__list__item__text">
+          <a href="/contact" className="nav__list__item__text">
             Contact
-          </Link>
+          </a>
         </li>
         <li className="nav__list__item sub__list">
-          <Link to="/partnership" className="nav__list__item__text">
+          <a href="/partnership" className="nav__list__item__text">
             Partnership
-          </Link>
+          </a>
         </li>
       </NavList>
       <IconContainer>
