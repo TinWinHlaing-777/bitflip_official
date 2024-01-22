@@ -32,10 +32,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
+import Navbar from "../../components/Nav/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
     <>
+      <Navbar />
       <HomeContainer>
         <HeaderBackground src="/images/porfolio/Circle1.svg" />
         <HeaderContainer>
@@ -298,6 +301,7 @@ const Home = () => {
           </form>
         </ContactContainer>
       </HomeContainer>
+      <Footer />
     </>
   );
 };

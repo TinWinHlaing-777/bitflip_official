@@ -6,6 +6,9 @@ import Privacy from "./pages/FooterSession/Privacy";
 import Terms from "./pages/FooterSession/Terms";
 import Conduct from "./pages/FooterSession/Conduct";
 import Services from "./pages/Services/Services";
+import About from "./pages/About/About";
+import BlogPromo from "./pages/Blogs/BlogPromo";
+import ContactInfo from "./pages/Contact/ContactInfo";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +16,21 @@ const router = createBrowserRouter([
     Component: Home,
   },
   {
+    path: "/about",
+    Component: About,
+  },
+  {
     path: "/services",
     Component: Services,
+  },
+
+  {
+    path: "/blog-promo",
+    Component: BlogPromo,
+  },
+  {
+    path: "/contact",
+    Component: ContactInfo,
   },
   {
     path: "/plus",

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   ContactInfoContainer,
   CopyrightContainer,
@@ -17,29 +18,29 @@ const Footer = () => {
           <h3 className="info__header">Contact Information</h3>
           <ul className="info__list">
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Instagram
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Discord
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Facebook
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Email Address
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Call Us
-              </a>
+              </Link>
             </li>
           </ul>
         </ContactInfoContainer>
@@ -47,29 +48,29 @@ const Footer = () => {
           <h3 className="info__header">Explore</h3>
           <ul className="info__list">
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Service
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Early Access
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Memberships
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 FAQs
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 About Us
-              </a>
+              </Link>
             </li>
           </ul>
         </ExploreInfoContainer>
@@ -77,34 +78,34 @@ const Footer = () => {
           <h3 className="info__header">Legal Notice</h3>
           <ul className="info__list">
             <li className="info__list__item">
-              <a href="/contact-details" className="info__text">
+              <Link to="/contact-details" className="info__text">
                 Contact Details
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="terms-of-use" className="info__text">
+              <Link to="/terms-of-use" className="info__text">
                 Terms of use
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="privacy-policy" className="info__text">
+              <Link to="/privacy-policy" className="info__text">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Newsletter Information
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="user-conduct" className="info__text">
+              <Link to="/user-conduct" className="info__text">
                 User Conduct
-              </a>
+              </Link>
             </li>
             <li className="info__list__item">
-              <a href="#" className="info__text">
+              <Link to="#" className="info__text">
                 Trademarks
-              </a>
+              </Link>
             </li>
           </ul>
         </LegalInfoContainer>

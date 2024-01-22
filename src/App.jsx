@@ -14,9 +14,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Navbar />
-      <RouterProvider router={router} />
-      <Footer />
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 };
