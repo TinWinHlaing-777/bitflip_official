@@ -1,8 +1,8 @@
 {
   "name": "bitflip-official-website",
+  "homepage": "https://bitflipofficial.com",
   "private": true,
   "version": "0.0.1",
-  "homepage": "https://bitflipofficial.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

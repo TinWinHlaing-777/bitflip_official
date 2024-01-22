@@ -6,7 +6,7 @@ import "remixicon/fonts/remixicon.css";
 // eslint-disable-next-line react/no-deprecated
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
