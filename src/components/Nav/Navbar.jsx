@@ -16,31 +16,21 @@ const Navbar = () => {
     <NavbarComponent open={open}>
       <NavLogo src="/images/logo/LogoFull_White.svg" />
       <NavList open={open}>
-        <li className="nav__list__item">
-          <a href="/" className="nav__list__item__text">
-            Home
-          </a>
-        </li>
-        <li className="nav__list__item">
-          <a href="/about" className="nav__list__item__text">
-            About
-          </a>
-        </li>
-        <li className="nav__list__item">
-          <Link to="/services" className="nav__list__item__text">
-            Services
-          </Link>
-        </li>
-        <li className="nav__list__item">
-          <a href="/blog-promo" className="nav__list__item__text">
-            Blogs
-          </a>
-        </li>
-        <li className="nav__list__item">
-          <a href="/contact" className="nav__list__item__text">
-            Contact
-          </a>
-        </li>
+        <Link to="/" className="nav__list__item">
+          <li className="nav__list__item__text">Home</li>
+        </Link>
+        <Link to="/about" className="nav__list__item">
+          <li className="nav__list__item__text">About</li>
+        </Link>
+        <Link to="/services" className="nav__list__item">
+          <li className="nav__list__item__text">Services</li>
+        </Link>
+        {/* <Link to="/blog-promo" className="nav__list__item">
+          <li className="nav__list__item__text">Blogs</li>
+        </Link> */}
+        {/* <Link to="/contact" className="nav__list__item">
+          <li className="nav__list__item__text">Contact</li>
+        </Link> */}
         {/* <li className="nav__list__item sub__list">
           <a href="/partnership" className="nav__list__item__text">
             Partnership

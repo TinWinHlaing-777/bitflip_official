@@ -12,7 +12,6 @@ export const NavbarComponent = styled.nav`
   position: fixed;
   z-index: 1000;
   @media screen and (max-width: 480px) {
-    /* padding: 0 0.5em; */
     height: 10vh;
     width: 100vw;
   }
@@ -21,10 +20,6 @@ export const NavbarComponent = styled.nav`
 export const NavLogo = styled.img`
   width: 150px;
   height: 150px;
-  /* @media screen and (max-width: 480px) {
-    width: 100px;
-    height: 100px;
-  } */
 `;
 
 export const NavList = styled.ul`
@@ -36,9 +31,9 @@ export const NavList = styled.ul`
   .nav__list__item {
     padding: 0 2.5em;
     cursor: pointer;
+    text-decoration: none;
     .nav__list__item__text {
       color: #fff;
-      text-decoration: none;
     }
     @media screen and (max-width: 768px) {
       padding: 20px 0px;
