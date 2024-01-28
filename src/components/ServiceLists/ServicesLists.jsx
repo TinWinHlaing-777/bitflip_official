@@ -435,13 +435,9 @@ const ServicesLists = ({ props }) => {
           </PackageCard>
         ))}
       </WebServiceContainer>
-      <MobileServiceContainer
-        className={props === 1 ? "active" : null}
-        data-aos="fade-up"
-        data-aos-duration="700"
-      >
+      <MobileServiceContainer className={props === 1 ? "active" : null}>
         {mobilepackages.map((data, index) => (
-          <PackageCard key={index}>
+          <PackageCard key={index} data-aos="fade-in" data-aos-duration="800">
             <div className="package__card__header">
               <p className="card__title">{data.title}</p>
             </div>
@@ -486,7 +482,7 @@ const ServicesLists = ({ props }) => {
                 : "design__list__item"
             }
           >
-            Social Medai Posts
+            Social Media
           </li>
           <li
             onClick={() => toggleDesign(2)}
@@ -496,17 +492,18 @@ const ServicesLists = ({ props }) => {
                 : "design__list__item"
             }
           >
-            Brand Printing
+            Printing
           </li>
         </DesignListContainer>
         <DesignDetailsContainer>
-          <LogoCard
-            className={activeDesign === 0 ? "active" : null}
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
+          <LogoCard className={activeDesign === 0 ? "active" : null}>
             {LogoBrandingList.map((data, index) => (
-              <div className="design__package__card" key={index}>
+              <div
+                className="design__package__card"
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration="700"
+              >
                 <div className="design__package__header">
                   <p className="design__package__title">{data.title}</p>
                 </div>
@@ -534,13 +531,14 @@ const ServicesLists = ({ props }) => {
               </div>
             ))}
           </LogoCard>
-          <MediaCard
-            className={activeDesign === 1 ? "active" : null}
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
+          <MediaCard className={activeDesign === 1 ? "active" : null}>
             {MediaList.map((data, index) => (
-              <div className="design__package__card" key={index}>
+              <div
+                className="design__package__card"
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration="700"
+              >
                 <div className="design__package__header">
                   <p className="design__package__title">{data.title}</p>
                 </div>
@@ -568,13 +566,14 @@ const ServicesLists = ({ props }) => {
               </div>
             ))}
           </MediaCard>
-          <BrandCard
-            className={activeDesign === 2 ? "active" : null}
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
+          <BrandCard className={activeDesign === 2 ? "active" : null}>
             {MediaList.map((data, index) => (
-              <div className="design__package__card" key={index}>
+              <div
+                className="design__package__card"
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration="700"
+              >
                 <div className="design__package__header">
                   <p className="design__package__title">{data.title}</p>
                 </div>

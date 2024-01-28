@@ -392,7 +392,7 @@ const LineContainer = styled.div`
   align-items: center;
   .line {
     width: 1px;
-    height: 225vh;
+    height: 200vh;
     background-color: ${theme.color.primary};
     opacity: 0.2;
     position: relative;
@@ -404,7 +404,7 @@ const LineContainer = styled.div`
 `;
 
 const BannerImage = styled.div`
-  margin-top: -137.5%;
+  margin-top: -200vh;
   z-index: 100;
   @media screen and (max-width: 480px) {
     margin-top: -428%;
@@ -423,8 +423,8 @@ const FirstImageContainer = styled.div`
     margin-bottom: 5em;
   }
   .first__porfolio__image {
-    width: 20em;
-    height: 28em;
+    width: 22.3vw;
+    height: 50vh;
     opacity: 0.8;
     @media screen and (max-width: 480px) {
       width: 18em;
@@ -487,8 +487,8 @@ const SecondImageContainer = styled.div`
       margin: auto;
     }
     .second__porfolio__image {
-      width: 20em;
-      height: 28em;
+      width: 22.3vw;
+      height: 50vh;
       opacity: 0.8;
       @media screen and (max-width: 480px) {
         width: 18em;
@@ -514,8 +514,8 @@ const ThridImageContainer = styled.div`
   }
   .third__porfolio__image {
     position: relative;
-    width: 20em;
-    height: 28em;
+    width: 22.3vw;
+    height: 50vh;
     opacity: 0.8;
     @media screen and (max-width: 480px) {
       width: 18em;
@@ -544,12 +544,12 @@ const ThridImageContainer = styled.div`
       border: none;
       background-color: ${theme.color.default};
       color: ${theme.color.primary};
-      width: 18em;
+      width: 22vw;
       height: 70px;
       box-shadow: 5px 5px 10px ${theme.color.standard};
       font-size: 18px;
       margin-top: 3em;
-      margin-left: -2px;
+      /* margin-left: 2px; */
       cursor: pointer;
       @media screen and (max-width: 480px) {
         width: 100%;
