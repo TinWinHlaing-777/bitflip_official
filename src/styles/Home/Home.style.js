@@ -91,12 +91,12 @@ const TextContainer = styled.div`
   }
 
   .text__body {
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 40px;
-    font-weight: 400;
-
+    font-weight: 300;
+    font-family: "Work Sans";
     @media (max-width: 480px) {
-      font-size: 16px;
+      font-size: 1rem;
       text-align: center;
     }
   }
@@ -109,7 +109,9 @@ const TextContainer = styled.div`
     width: 250px;
     height: 70px;
     box-shadow: 5px 5px 10px ${theme.color.standard};
-    font-size: 20px;
+    font-size: 1.5rem;
+    font-family: "Work Sans";
+    font-weight: 400;
     margin-top: 12%;
     cursor: pointer;
     display: flex;
@@ -212,7 +214,8 @@ const AboutContainer = styled(ServiceContainer)`
 
   .about__header {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2.2rem;
+    font-family: "Work Sans";
 
     @media screen and (max-width: 768px) {
       font-size: 24px;
@@ -222,10 +225,11 @@ const AboutContainer = styled(ServiceContainer)`
   }
 
   .about__body {
-    font-weight: 400;
+    font-weight: 300;
     line-height: 40px;
     text-align: right;
-    font-size: 16px;
+    font-size: 1.2rem;
+    font-family: "Work Sans";
 
     @media screen and (max-width: 768px) {
       text-align: center;
@@ -257,6 +261,8 @@ const ServiceListContainer = styled(ServiceContainer)`
       position: relative;
       padding-bottom: 10px;
       font-weight: 200;
+      font-family: "Work Sans";
+      font-size: 1.2rem;
 
       @media screen and (max-width: 768px) {
         width: 100%;
@@ -316,8 +322,10 @@ const CarouselComponent = styled.div`
     }
     .carousel__text {
       text-align: center;
-      font-size: 16px;
+      font-size: 1.3rem;
+      font-weight: 300;
       line-height: 30px;
+      font-family: "Work Sans";
     }
   }
   .carousel__main {
@@ -437,7 +445,9 @@ const FirstImageContainer = styled.div`
   }
   .first__container__text {
     position: absolute;
-    font-size: 3.2em;
+    font-size: 3.5rem;
+    font-family: "Work Sans";
+    font-weight: 600;
     @media screen and (max-width: 480px) {
       font-size: 2.8em;
       text-align: center;
@@ -450,10 +460,12 @@ const FirstImageContainer = styled.div`
 `;
 
 const BannerText = styled.p`
-  font-size: 14px;
+  font-size: 1.2rem;
+  font-weight: 200;
   line-height: 30px;
   margin-top: -30px;
   position: absolute;
+  font-family: "Work Sans";
   @media screen and (max-width: 480px) {
     position: static;
     text-align: center;
@@ -468,9 +480,11 @@ const SecondImageContainer = styled.div`
   width: 100%;
   position: relative;
   .second__container__text {
-    font-size: 14px;
+    font-size: 1.2rem;
+    font-weight: 200;
     line-height: 30px;
     text-align: right;
+    font-family: "Work Sans";
     @media screen and (max-width: 480px) {
       position: absolute;
       z-index: 100;
@@ -534,7 +548,9 @@ const ThridImageContainer = styled.div`
       margin-top: 10%;
     }
     .third__container__text {
-      font-size: 14px;
+      font-size: 1.2rem;
+      font-weight: 200;
+      font-family: "Work Sans";
       line-height: 30px;
       @media screen and (max-width: 480px) {
         text-align: center;
@@ -547,10 +563,12 @@ const ThridImageContainer = styled.div`
       width: 22vw;
       height: 70px;
       box-shadow: 5px 5px 10px ${theme.color.standard};
-      font-size: 18px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-family: "Work Sans";
       margin-top: 3em;
-      /* margin-left: 2px; */
       cursor: pointer;
+
       @media screen and (max-width: 480px) {
         width: 100%;
       }
@@ -570,7 +588,9 @@ const FinalPorfolioComponent = styled.div`
     margin: 15% auto;
   }
   .final__container__text {
-    font-size: 14px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: "Work Sans";
     line-height: 30px;
     text-align: right;
     @media screen and (max-width: 480px) {
@@ -627,7 +647,9 @@ const NewFeaturesContainer = styled.div`
   .new__feature__btn {
     background: none;
     border: none;
-    font-size: 42px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: "Work Sans";
     color: ${theme.color.primary};
     cursor: pointer;
     text-shadow: 2px 10px 100px ${theme.color.primary};
@@ -683,7 +705,8 @@ const ContactContainer = styled.div`
 
   .contact__text {
     font-weight: 200;
-    font-size: 20px;
+    font-size: 1.5rem;
+    font-family: "Work Sans";
     margin-bottom: 200px;
     line-height: 40px;
     @media screen and (max-width: 480px) {
@@ -709,7 +732,8 @@ const ContactContainer = styled.div`
       margin-bottom: 50px;
       outline: none;
       color: ${theme.color.primary};
-      font-size: 16px;
+      font-size: 1rem;
+      font-family: "Work Sans";
       padding: 10px 0px;
     }
     .contact__btn {
@@ -718,7 +742,9 @@ const ContactContainer = styled.div`
       height: 80px;
       margin-top: 20px;
       background: none;
-      font-size: 18px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-family: "Work Sans";
       @media screen and (max-width: 480px) {
         height: 50px;
       }

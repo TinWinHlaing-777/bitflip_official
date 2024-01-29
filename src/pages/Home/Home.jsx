@@ -46,9 +46,8 @@ const Home = () => {
             <TextContainer>
               <div className="text__header">Our Beginning, Your Future</div>
               <p className="text__body">
-                a journey of growth and partnership, making it compelling and
-                forward-looking <br />
-                to the future of your business
+                A journey of growth and partnership, making it compelling and
+                forward-looking to the future of your business
               </p>
               <Link to="/services" className="intro__btn">
                 Join Now
