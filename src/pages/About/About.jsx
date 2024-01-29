@@ -37,9 +37,15 @@ const About = () => {
             alt="main__img"
             className="main__img"
           />
-          <p className="main__title">The Ideology</p>
-          <hr className="small__line" />
-          <p className="main__body">
+          <p className="main__title" data-aos="fade-up" data-aos-duration="500">
+            The Ideology
+          </p>
+          <hr
+            className="small__line"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          />
+          <p className="main__body" data-aos="fade-up" data-aos-duration="500">
             Now you've almost done with your idea of business, and are you
             actually making it? did you achieve all you targets? Probably will
             or not, but it doesn't matter. That means you need to make sure your
@@ -56,8 +62,14 @@ const About = () => {
               src="/images/about/imgs/WeSee.png"
               alt="we-see"
               className="first__info__image"
+              data-aos="fade-up"
+              data-aos-duration="500"
             />
-            <div className="first__info__text__container">
+            <div
+              className="first__info__text__container"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
               <p className="first__info__title">We see</p>
               <p className="first__info__body">
                 By the year 2023, A.I development is obviously growing top
@@ -69,7 +81,11 @@ const About = () => {
             </div>
           </div>
           <div className="second__infoContainer">
-            <div className="second__info__text__container">
+            <div
+              className="second__info__text__container"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <p className="second__info__title">We make the work</p>
               <p className="second__info__body">
                 Let's be honest. You want to fulfil your dream come true. But
@@ -83,6 +99,8 @@ const About = () => {
               src="/images/about/imgs/WeMake.png"
               alt="we-make"
               className="second__info__image"
+              data-aos="fade-up"
+              data-aos-duration="600"
             />
           </div>
           <div className="third__infoContainer">
@@ -90,8 +108,14 @@ const About = () => {
               src="/images/about/imgs/OnUs.png"
               alt="on-us"
               className="third__info__image"
+              data-aos="fade-up"
+              data-aos-duration="500"
             />
-            <div className="third__info__text__container">
+            <div
+              className="third__info__text__container"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <p className="third__info__title">It's on us!</p>
               <p className="third__info__body">
                 Now your are ready to start this journey of building your
@@ -102,7 +126,13 @@ const About = () => {
           <hr className="info__stop__line" />
         </InfoContainer>
         <MagicContainer>
-          <p className="magic__title">See the magic</p>
+          <p
+            className="magic__title"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            See the magic
+          </p>
           <div className="magic__details__container">
             {MagicArray.map((detail, index) => (
               <div className="magic__details" key={index}>
@@ -110,38 +140,63 @@ const About = () => {
                   src={detail.iconSrc}
                   alt={detail.title}
                   className="magic__img"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
                 />
-                <p className="magic__detail__title">{detail.title}</p>
-                <p className="magic__detail__body">{detail.body}</p>
+                <p
+                  className="magic__detail__title"
+                  data-aos="fade-up"
+                  data-aos-duration="700"
+                >
+                  {detail.title}
+                </p>
+                <p
+                  className="magic__detail__body"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                >
+                  {detail.body}
+                </p>
               </div>
             ))}
-            {/* <div className="magic__details">
-              <img
-                src="/images/about/icons/2.png"
-                alt="1"
-                className="magic__img"
-              />
-              <p className="magic__detail__title">The Pillers</p>
-              <p className="magic__detail__body">
-                We exceed boundaries to forge connections, resonating globally.
-                Our commitment knows no border.
-              </p>
-            </div>{" "}
-            <div className="magic__details">
-              <img
-                src="/images/about/icons/3.png"
-                alt="1"
-                className="magic__img"
-              />
-              <p className="magic__detail__title">Tailored</p>
-              <p className="magic__detail__body">
-                We exceed boundaries to forge connections, resonating globally.
-                Our commitment knows no border.
-              </p>
-            </div> */}
+          </div>
+          <div className="magic__footer">
+            <p
+              className="magic__footer__text"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
+              Hurry! You don't want your dream to be claimed by someone else.
+            </p>
+            <div className="magic__btn__container">
+              <hr className="magic__sm__line" />
+              <button className="magic__btn">Save your Spot!</button>
+              <hr className="magic__sm__line" />
+            </div>
           </div>
         </MagicContainer>
-        <MeetUsContainer></MeetUsContainer>
+        <MeetUsContainer>
+          <p className="meet__title" data-aos="fade-up" data-aos-duration="500">
+            Meet Us
+          </p>
+          <div className="loc__container">
+            <div className="map__container">
+              <hr className="meet__sm__line" />
+              <p
+                className="meet__detail__text"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                Based in Southeast Asia, Myanmar, our team has been working on
+                the next level of upscaling worldwide and the values that we put
+                in . Get in touch to see our vision more clearly and our insight
+                of advancing targets.
+              </p>
+            </div>
+            <button className="meet__btn">Contact</button>
+            <hr className="meet__lg__line" />
+          </div>
+        </MeetUsContainer>
       </AboutContainer>
       <Footer />
     </>
