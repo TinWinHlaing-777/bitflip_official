@@ -51,7 +51,7 @@ export const NavList = styled.ul`
     flex-direction: column;
     background: rgba(25, 25, 25, 0.95);
     width: 100%;
-    height: ${(props) => (props.open ? "450px" : "0")};
+    height: ${(props) => (props.open ? "350px" : "0")};
     top: 10vh;
     left: 0;
     overflow: hidden;

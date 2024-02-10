@@ -105,6 +105,7 @@ const TextContainer = styled.div`
     border: none;
     text-decoration: none;
     background-color: ${theme.color.primary};
+    opacity: 0.9;
     color: ${theme.color.default};
     width: 250px;
     height: 70px;
@@ -118,7 +119,7 @@ const TextContainer = styled.div`
     justify-content: center;
     align-items: center;
     &:hover {
-      background-color: #a0a0a0;
+      opacity: 1;
       transition: all 0.3s ease;
     }
     .btn__icon {
@@ -432,7 +433,7 @@ const FirstImageContainer = styled.div`
   }
   .first__porfolio__image {
     width: 22.3vw;
-    height: 50vh;
+    height: 60vh;
     opacity: 0.8;
     @media screen and (max-width: 480px) {
       width: 18em;
@@ -502,7 +503,7 @@ const SecondImageContainer = styled.div`
     }
     .second__porfolio__image {
       width: 22.3vw;
-      height: 50vh;
+      height: 60vh;
       opacity: 0.8;
       @media screen and (max-width: 480px) {
         width: 18em;
@@ -529,7 +530,7 @@ const ThridImageContainer = styled.div`
   .third__porfolio__image {
     position: relative;
     width: 22.3vw;
-    height: 50vh;
+    height: 60vh;
     opacity: 0.8;
     @media screen and (max-width: 480px) {
       width: 18em;

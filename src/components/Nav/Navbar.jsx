@@ -14,7 +14,9 @@ const Navbar = () => {
   const handleClose = () => setOpen(false);
   return (
     <NavbarComponent open={open}>
-      <NavLogo src="/images/logo/LogoFull_White.svg" />
+      <Link to="/">
+        <NavLogo src="/images/logo/LogoFull_White.svg" />
+      </Link>
       <NavList open={open}>
         <Link to="/" className="nav__list__item">
           <li className="nav__list__item__text">Home</li>
@@ -28,9 +30,9 @@ const Navbar = () => {
         {/* <Link to="/blog-promo" className="nav__list__item">
           <li className="nav__list__item__text">Blogs</li>
         </Link> */}
-        {/* <Link to="/contact" className="nav__list__item">
+        <Link to="/contact" className="nav__list__item">
           <li className="nav__list__item__text">Contact</li>
-        </Link> */}
+        </Link>
         {/* <li className="nav__list__item sub__list">
           <a href="/partnership" className="nav__list__item__text">
             Partnership
