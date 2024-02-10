@@ -8,8 +8,8 @@ export const MainContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: ${theme.color.origin};
-  padding-bottom: 10rem;
+  background-color: ${theme.color.default};
+  padding: 12rem 0;
   .main__img {
     width: 80vw;
     height: 70vh;
@@ -207,7 +207,7 @@ export const InfoContainer = styled.div`
 `;
 
 export const MagicContainer = styled.div`
-  background-color: ${theme.color.origin};
+  background-color: ${theme.color.default};
   .magic__title {
     padding-top: 5rem;
     text-align: center;
@@ -309,7 +309,7 @@ export const MagicContainer = styled.div`
 `;
 
 export const MeetUsContainer = styled.div`
-  background-color: ${theme.color.origin};
+  background-color: ${theme.color.default};
   .meet__title {
     text-transform: uppercase;
     text-align: center;

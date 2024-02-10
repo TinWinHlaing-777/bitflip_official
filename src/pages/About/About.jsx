@@ -32,11 +32,11 @@ const About = () => {
       <Navbar />
       <AboutContainer>
         <MainContainer>
-          <img
+          {/* <img
             src="/images/about/imgs/Ideology_BG.png"
             alt="main__img"
             className="main__img"
-          />
+          /> */}
           <p className="main__title" data-aos="fade-up" data-aos-duration="500">
             The Ideology
           </p>
